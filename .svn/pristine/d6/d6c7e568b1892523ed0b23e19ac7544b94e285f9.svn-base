@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wifi.scan"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tra"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wifi.scan.UserActivity"
+            android:label="@string/title_activity_user_watch" >
+        </activity>
+
+        <receiver android:name="com.tr.ui.TrBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="updateList" />
+                <action android:name="updateWarning" />
+            </intent-filter>
+
+            <!--
+            <intent-filter android:priority="20" >
+                <action android:name="com.mstar.tv.service.AUDIO" />
+            </intent-filter>
+            <intent-filter android:priority="20" >
+                <action android:name="com.mstar.tv.service.ZOOM" />
+            </intent-filter>
+            <intent-filter android:priority="20" >
+                <action android:name="com.mstar.tv.service.PICTURE_MODE" />
+            </intent-filter>
+            -->
+        </receiver>
+        
+        <activity
+            android:name="com.wifi.scan.CopyOfWatchActivity"
+            android:label="@string/title_activity_watch" >
+            <intent-filter>
+            <!--     <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.wifi.scan.WatchActivity"
+            android:label="@string/title_activity_watch" >
+            <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wifi.scan.DetailWatchActivity"
+            android:label="@string/title_activity_detail_watch" >
+        </activity>
+        <activity
+            android:name="com.wifi.scan.SaveWatchActivity"
+            android:label="@string/title_activity_save_watch" >
+        </activity>
+    </application>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+</manifest>

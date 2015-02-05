@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listRowContent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/black"
+    android:descendantFocusability="blocksDescendants" >
+
+         <TextView
+             android:id="@+id/show_num"
+             android:layout_width="match_parent"
+             android:layout_height="55dp"
+             android:layout_gravity="left|center_vertical"
+             android:layout_margin="1dp"
+             android:layout_weight="1.04"
+             android:background="@drawable/white"
+             android:gravity="center"
+             android:textSize="20dip" />
+
+         <TextView
+             android:id="@+id/machine_num"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_margin="1dp"
+             android:layout_weight="1"
+             android:background="@drawable/white"
+             android:gravity="center"
+             android:textSize="20dip" />
+         <TextView
+             android:id="@+id/work_state"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_margin="1dp"
+             android:layout_weight="1"
+             android:background="@drawable/white"
+             android:gravity="center" />
+
+          <TextView
+             android:id="@+id/former_state"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_margin="1dp"
+             android:layout_weight="1"
+             android:background="@drawable/white"
+             android:gravity="center" />
+          <TextView
+             android:id="@+id/dryer_state"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_margin="1dp"
+             android:layout_weight="1"
+             android:background="@drawable/white"
+             android:gravity="center" />
+</LinearLayout>

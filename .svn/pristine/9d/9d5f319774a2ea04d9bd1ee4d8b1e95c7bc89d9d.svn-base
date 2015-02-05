@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_watch"
+        android:showAsAction="always|withText"
+        android:title="@string/menu_watch"/>
+     <item
+        android:id="@+id/menu_mian"
+        android:showAsAction="always|withText"
+        android:title="@string/menu_mian"/>
+     <item
+        android:id="@+id/menu_save"
+        android:showAsAction="always|withText"
+        android:title="@string/menu_save"
+        android:enabled="false"/>
+
+</menu>

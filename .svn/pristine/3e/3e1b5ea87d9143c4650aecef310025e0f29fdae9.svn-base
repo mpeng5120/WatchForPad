@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <Button
+             android:id="@+id/savebutton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:gravity="center"   
+             android:layout_marginBottom="5dp"    
+             android:text="@string/savecurrent" />
+     <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/lightgray" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"             
+                android:layout_marginLeft="1dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"                      
+                    android:orientation="vertical" >
+
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"                        
+                        android:text="定时一" 
+                        android:layout_marginTop="20dp"/>
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"                         
+                        android:text="定时二" 
+                        android:layout_marginTop="20dp"/>
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="定时三"
+                        android:layout_marginTop="20dp" />
+                    <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"                        
+                        android:text="定时四"
+                        android:layout_marginTop="20dp" />
+                    
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/type" 
+                        android:enabled="false"
+                        android:layout_marginTop="20dp"
+                        />
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/type" 
+                        android:enabled="false" 
+                        android:layout_marginTop="20dp"
+                         />
+                    <Spinner
+                        android:id="@+id/spinner3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:entries="@array/type" 
+                        android:enabled="false"
+                        android:layout_marginTop="20dp"
+                         />
+                    <Spinner
+                        android:id="@+id/spinner4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:entries="@array/type" 
+                        android:enabled="false"
+                        android:layout_marginTop="20dp"
+                         />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:focusable="true"   
+                    android:focusableInTouchMode="true"  >
+                    <EditText
+                        android:id="@+id/dateWeek1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:enabled="false"
+                        android:layout_marginTop="20dp"
+                         />
+                    <EditText
+                        android:id="@+id/dateWeek2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:enabled="false"
+                        android:layout_marginTop="20dp"
+                         />
+                    <EditText
+                        android:id="@+id/dateWeek3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false" 
+                        android:layout_marginTop="20dp"
+                         />
+                    <EditText
+                        android:id="@+id/dateWeek4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:enabled="false"
+                        android:layout_marginTop="20dp"
+                         />
+                </LinearLayout>
+                <LinearLayout
+                   android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:focusable="true"   
+                    android:focusableInTouchMode="true"  >
+                    <EditText
+                        android:id="@+id/time1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:enabled="false"
+                        android:layout_marginTop="20dp"
+                         />
+                    <EditText
+                        android:id="@+id/time2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:enabled="false"
+                        android:layout_marginTop="20dp"
+                         />
+                    <EditText
+                        android:id="@+id/time3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:enabled="false"
+                        android:layout_marginTop="20dp"
+                         />
+                    <EditText
+                        android:id="@+id/time4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" 
+                        android:enabled="false"
+                        android:layout_marginTop="20dp"
+                         />
+
+                 
+
+                </LinearLayout>
+                
+            </LinearLayout>
+        
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
